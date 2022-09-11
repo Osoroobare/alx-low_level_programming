@@ -10,17 +10,16 @@ int main(void)
 {
 	int number1, number2;
 
-	for (number1 = 48; number2 <= 57; number1++)
+	for (number1 = 0; number2 <= 9; number1++)
 	{
-		for (number2 = 48; number2 <= 57; number2++)
+		for (number2 = number1 + 1; number2 <= 10; number2++)
 		{
-			putchar(number1);
-			putchar (number2);
-			if (number1 != 57 ||  number2 != 57)
-			{
-				putchar(',');
-				putchar(' ');
-			}
+			putchar((number1 % 10) + '0');
+			putchar ((number2 % 10) + '0');
+			if (number1 == 8 && number2 == 9)
+				continue;
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
