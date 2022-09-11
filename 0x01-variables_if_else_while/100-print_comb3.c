@@ -10,14 +10,14 @@ int main(void)
 {
 	int number1, number2;
 
-	for (number1 = 0; number2 < 10; number1++)
+	for (number1 = 48; number2 <= 57; number1++)
 	{
-		for (number2 = 0; number2 < 10 ; number2++)
+		for (number2 = 48; number2 <= 57; number2++)
 		{
-			putchar((number1 % 10) + '0');
-			putchar ((number2 % 10) + '0');
+			putchar(number1);
+			putchar (number2);
 
-			if (number1 == 9 && number2 == 9)
+			if (number1 != 57 ||  number2 != 57)
 				continue;
 			putchar(',');
 			putchar(' ');
