@@ -16,11 +16,11 @@ int main(void)
 		{
 			putchar(number1);
 			putchar (number2);
-
 			if (number1 != 57 ||  number2 != 57)
-				continue;
-			putchar(',');
-			putchar(' ');
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
